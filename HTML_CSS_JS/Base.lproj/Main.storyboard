@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-cV-Gtz">
+                                <rect key="frame" x="20" y="20" width="560" height="550"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcD-GK-OQ2">
+                                <rect key="frame" x="536" y="570" width="44" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Action"/>
+                                <connections>
+                                    <action selector="runAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTz-Fq-IVs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cnB-cV-Gtz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Als-w1-o1t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PcD-GK-OQ2" secondAttribute="bottom" id="IDO-5M-nIw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PcD-GK-OQ2" secondAttribute="trailing" id="Jsa-L8-if1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnB-cV-Gtz" secondAttribute="trailing" id="KnS-Xw-amb"/>
+                            <constraint firstItem="cnB-cV-Gtz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="V0m-mS-1er"/>
+                            <constraint firstItem="PcD-GK-OQ2" firstAttribute="top" secondItem="cnB-cV-Gtz" secondAttribute="bottom" id="ZI6-dN-QNv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="cnB-cV-Gtz" id="a5t-ja-eI2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="339"/>
+        </scene>
+    </scenes>
+</document>
